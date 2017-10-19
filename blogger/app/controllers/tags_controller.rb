@@ -13,6 +13,7 @@ class TagsController < ApplicationController
   	@tags.destroy
 
   	flash.notice = "Tag '#{@tags.name}' Deleted!"
+    redirect_to tags_path
 
   end
 
